@@ -6,6 +6,50 @@ body{
     margin: 0;
 }
 
+#navlist {
+    background: #2A3c24;
+    position: fixed;
+    width: 100%;
+}
+       
+/* styling navlist anchor element */
+#navlist a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navlist-right{
+    float:right;
+}
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #a1c349;
+    color: black;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 95px;
+}
+
+.hdr-bg{
+    background: url('../images/pyramids.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 260px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
 #hdr{
     min-height: 220px;
     padding-top: 3em;
@@ -14,21 +58,23 @@ body{
     padding-left: 1.5em;
 }
 
-.dest{
-    background: #2A3c24;
-}
-
-h2, h3, p{
-    margin: 0;
-}
-
-img{
-    width: 100%;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .dest{
-    width: 40%;
+    width:20%;
+    background: #87a330;
     display:inline-block;
+    margin: 5px;
+}
+
+.dest > img {
+    width: 92%;
+    height: 200px;
 }
 
 .btn{
@@ -44,24 +90,6 @@ img{
     background: #a1c349;
 }
 
-.hdr-bg{
-    background: url('../images/pyramids.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 260px;
-    position: absolute;
-    margin: 0;
-    z-index: -1;
-    opacity: 0.3;
-}
-
-h2, h3{
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-}
-
 .contact{
     background: #a1c349;
     min-height: 100px;   
@@ -70,17 +98,12 @@ h2, h3{
 .prices{
     background: #87a330;
     min-height: 100px;
+    text-align: center;
 }
 
-footer{
+.footer{
    min-height: 50px;
    background: #cad593;
    color: black;
    line-height: 50px;
 }
-
-section{
-    padding-bottom: 1.5em;
-}
-
-
